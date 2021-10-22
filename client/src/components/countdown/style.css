@@ -1,0 +1,101 @@
+.saveday{
+    /* padding-top: 0px; */
+}
+.countdownwrap {
+    text-align: center;
+    padding: 0px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.react-countdown{
+    margin: 0px;
+}
+.react-countdown li {
+    display: inline-block;
+    margin: 0px 0px;
+    text-align: center;
+    position: relative;
+    width: 250px;
+    padding: 65px 23px;
+    /* background: url(../../images/piccircle.png); */
+    height: 200px;
+    background-size:cover;
+}
+
+.saveday.s2 .react-countdown li {
+    background: url(../../images/vector2.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.react-countdown li:after {
+    display: none;
+}
+.react-countdown .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 14px!important;
+    color: rgb(255, 255, 255);
+}
+.react-countdown .digit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px!important;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Great Vibes', cursive;
+}
+.couple-area{
+    padding-top: 150px!important;
+}
+
+@media (max-width:991px){
+    .react-countdown li {
+        margin-bottom: 0px;
+        width:60px;
+    }
+    .countdownwrap{
+        padding-bottom: 0;
+    }
+    .react-countdown .digit {
+        font-size: 30px!important;
+
+    }
+    .react-countdown .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 7px!important;
+    }
+
+
+}
+
+@media (max-width:400px){
+    .react-countdown li {
+        margin-bottom: 30px;
+        width: 40px;
+        padding: 0;
+    }
+    .countdownwrap{
+        padding: 0;
+    }
+    .react-countdown .digit {
+        font-size: 20px!important;
+
+    }
+    .react-countdown .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 7px!important;
+    }
+
+}
