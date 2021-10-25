@@ -8,7 +8,7 @@ import './style.css'
 
 const Getting = () => {
     return(
-        <div className="gta-area section-padding">
+        <div id="getting" className="gta-area section-padding">
             <Sectiontitle section={'Getting There'} color={'white'}/>
             <div className="container">
                 <div className="row">

@@ -26,6 +26,8 @@ const Header2 = () => {
                                     <li><AnchorLink href='#event'>EVENTS</AnchorLink></li>
                                     <li><AnchorLink href='#gallery'>GALLERY</AnchorLink></li>
                                     <li><AnchorLink href='#rsvp'>RSVP</AnchorLink></li>
+                                    <li><AnchorLink href='#getting'>INFO</AnchorLink></li>
+                                    <li><AnchorLink href='#gift'>REGISTRY</AnchorLink></li>
                                     
                                 </ul>
                             </div>

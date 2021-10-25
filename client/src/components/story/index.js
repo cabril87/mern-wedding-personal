@@ -12,12 +12,12 @@ const Story = () =>{
     return(
         <div id="story" className="story-area section-padding">
             <Sectiontitle section={'Our Love Story'}/>
-            <div className="container">
+            <div className="container story-con">
                 <div className="story-wrap">
                     <div className="row">
                         <div className="col-lg-6 col-md-12 col-12 pr-n">
-                            <div className="story-img">
-                                <img src={strory1} alt="" style={{borderRadius: '50%'}}/>
+                            <div className="story-img img1">
+                                <img src={strory1} alt="" />
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-12">
@@ -41,13 +41,13 @@ const Story = () =>{
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-12 pl-n">
-                            <div className="story-img">
-                                <img src={strory2} alt="" style={{borderRadius: '50%'}}/>
+                            <div className="story-img img2">
+                                <img src={strory2} alt="" />
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-12 pr-n">
-                            <div className="story-img">
-                                <img src={strory3} alt="" style={{borderRadius: '50%'}}/>
+                            <div className="story-img img3">
+                                <img src={strory3} alt="" />
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-12">
@@ -60,18 +60,18 @@ const Story = () =>{
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-12 col-12">
+                        <div className="col-lg-6 col-md-12 col-12 ">
                             <div className="story-text right-align-text">
                                 <h3>Our Engagement</h3>
                                 {/* <span className="date">Nov 22, 2020</span> */}
-                                <p>This is the story of our engagement. </p>
+                                <p>Engagement Story paragraph</p>
                                 <div className="story-button">
                                    <Link className="theme-btn" to='/'>Read More</Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 col-12 pl-n">
-                            <div className="story-img">
+                            <div className="story-img img4">
                                 <img src={strory4} alt=""/>
                             </div>
                         </div>

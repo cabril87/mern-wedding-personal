@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios'
 import Sectiontitle from '../section-title'
 import './style.css'
 
@@ -23,6 +24,8 @@ class Rsvp extends Component {
             error
         })
     }
+
+    
 
     subimtHandler = (e) => {
         e.preventDefault();
@@ -65,28 +68,28 @@ class Rsvp extends Component {
                 error: {}
             })
         }
-
-        fetch('http://localhost:3002/send', {
-      method: "POST",
-      body: JSON.stringify(this.state),
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-    }).then(
-    (response) => (response.json())
-      ).then((response)=> {
-    if (response.status === 'success') {
-      alert("Message Sent.");
-      this.resetForm()
-    } else if(response.status === 'fail') {
-      alert("Message failed to send.")
+        axios({
+            method: "POST",
+            url:"http://localhost:3002/send",
+            data:  this.state
+          }).then((response)=>{
+            if (response.data.status === 'success') {
+              alert("Message Sent.");
+              this.resetForm()
+            } else if(response.data.status === 'fail') {
+              alert("Message failed to send.")
+            }
+          })
     }
-  })
 
-        console.log(this.state);
-        console.log(this.state.error.notes);
-    }
+    resetForm(){
+        this.setState({name: '',
+        email: '',
+        rsvp: '',
+        events: '',
+        notes: '',
+        error: {}})
+      }
 
     render() {
 
@@ -97,23 +100,31 @@ class Rsvp extends Component {
             notes, error } = this.state;
         return (
             <div id="rsvp" className="rsvp-area go-rsvp-area section-padding">
-                <Sectiontitle section={'Be Our Guest'} />
-                <div className="container">
+                <div className="container rsvp-con">
                     <div className="row">
                         <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                             <div className="rsvp-wrap">
-                                <form onSubmit={this.subimtHandler}>
+
+                            
+       
+
+
+                                
+
+
+                                <form onSubmit={this.subimtHandler.bind(this)} style={{marginTop: '60px'}}>
+                                    <Sectiontitle section={'Be Our Guest'} color={'white'}/>
                                     <div className="contact-form form-style">
                                         <div className="col-12 col-sm-12">
-                                            <input type="text" value={name} onChange={this.changeHandler} placeholder="Your Name*" id="fname" name="name" />
+                                            <input type="text" value={name} onChange={this.changeHandler.bind(this)} placeholder="Your Full Name*" id="fname" name="name" />
                                             <p>{error.name ? error.name : ''}</p>
                                         </div>
                                         <div className="col-12  col-sm-12">
-                                            <input type="text" placeholder="Your Email*" onChange={this.changeHandler} value={email} id="email" name="email" />
+                                            <input type="text" placeholder="Your Email*" onChange={this.changeHandler.bind(this)} value={email} id="email" name="email" />
                                             <p>{error.email ? error.email : ''}</p>
                                         </div>
                                         <div className="col col-sm-12">
-                                            <select className="form-control" onChange={this.changeHandler} value={rsvp} name="rsvp">
+                                            <select className="form-control" onChange={this.changeHandler.bind(this)} value={rsvp} name="rsvp">
                                                 <option disabled value="">Number Of rsvp*</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -127,16 +138,16 @@ class Rsvp extends Component {
                                             <p>{error.rsvp ? error.rsvp : ''}</p>
                                         </div>
                                         <div className="col col-sm-12">
-                                            <select className="form-control" onChange={this.changeHandler} value={events} name="events">
+                                            <select className="form-control" onChange={this.changeHandler.bind(this)} value={events} name="events">
                                                 <option disabled value="">I Am Attending*</option>
-                                                <option value="1">All events</option>
-                                                <option value="2">Wedding ceremony</option>
-                                                <option value="3">Reception party</option>
+                                                <option value="All events">All events</option>
+                                                <option value="Wedding ceremony">Wedding ceremony</option>
+                                                <option value="Reception party">Reception party</option>
                                             </select>
                                             <p>{error.events ? error.events : ''}</p>
                                         </div>
                                         <div className="col-12 col-sm-12">
-                                            <textarea className="contact-textarea" value={notes} onChange={this.changeHandler} placeholder="Message" name="notes"></textarea>
+                                            <textarea className="contact-textarea" value={notes} onChange={this.changeHandler.bind(this)} placeholder="Message" name="notes"></textarea>
                                             <p>{error.notes ? error.notes : ''}</p>
                                         </div>
                                         <div className="col-12 text-center">

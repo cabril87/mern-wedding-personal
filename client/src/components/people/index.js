@@ -1,5 +1,5 @@
-import React from  'react';
-import {Link} from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom'
 import Sectiontitle from '../section-title'
 import bride1 from '../../images/groomsmen-bridesmaid/1.jpg'
 import bride2 from '../../images/groomsmen-bridesmaid/2.jpg'
@@ -13,10 +13,10 @@ import bride8 from '../../images/groomsmen-bridesmaid/8.jpg'
 import './style.css'
 
 const People = (props) => {
-    return(
+    return (
         <section id='people' className={props.guest}>
             <div className="groomsmen-bridesmaid-area section-padding">
-                <Sectiontitle section={'Groomsmen & Bridesmaid'} color={'white'}/>
+                <Sectiontitle section={'Groomsmen & Bridesmaid'} color={'white'} />
                 <div className="container">
                     <div className="groomsmen-bridesmaid-area-menu">
                         <div className="Groomsman-wrap">
@@ -35,8 +35,7 @@ const People = (props) => {
                                             </div>
                                         </div>
                                         <div className="groomsmen-bridesmaid-content">
-                                            <h4>Maria</h4>
-                                            <span>Maid Of Honer</span>
+
                                         </div>
                                     </div>
                                 </div>
@@ -44,7 +43,7 @@ const People = (props) => {
                                 <div className="col-lg-4 col-md-6 col-sm-6 grid">
                                     <div className=" groomsmen-bridesmaid-wrap-2">
                                         <div className="groomsmen-bridesmaid-img">
-                                        {/* <img src={bride5 } alt="bride"/> */}
+                                            {/* <img src={bride5 } alt="bride"/> */}
                                             <div className="social-list">
                                                 <ul className="d-flex">
                                                     <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
@@ -55,16 +54,17 @@ const People = (props) => {
                                             </div>
                                         </div>
                                         <div className="groomsmen-bridesmaid-content">
-                                            <h4>Ashton</h4>
-                                            <span>Bridesmaid</span>
+                                            <h4>Maria</h4>
+                                            <span>Maid Of Honer</span>
+
                                         </div>
                                     </div>
                                 </div>
-                               
+
                                 <div className="col-lg-4 col-md-6 col-sm-6 grid">
                                     <div className="groomsmen-bridesmaid-wrap">
                                         <div className="groomsmen-bridesmaid-img">
-                                        {/* <img src={bride3 } alt="bride"/> */}
+                                            {/* <img src={bride3 } alt="bride"/> */}
                                             <div className="social-list">
                                                 <ul className="d-flex">
                                                     <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
@@ -104,7 +104,7 @@ const People = (props) => {
                                 <div className="col-lg-4 col-md-6 col-sm-6 grid">
                                     <div className=" groomsmen-bridesmaid-wrap-2">
                                         <div className="groomsmen-bridesmaid-img">
-                                        {/* <img src={bride5 } alt="bride"/> */}
+                                            {/* <img src={bride5 } alt="bride"/> */}
                                             <div className="social-list">
                                                 <ul className="d-flex">
                                                     <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
@@ -120,11 +120,11 @@ const People = (props) => {
                                         </div>
                                     </div>
                                 </div>
-                               
+
                                 <div className="col-lg-4 col-md-6 col-sm-6 grid">
                                     <div className="groomsmen-bridesmaid-wrap">
                                         <div className="groomsmen-bridesmaid-img">
-                                        {/* <img src={bride3 } alt="bride"/> */}
+                                            {/* <img src={bride3 } alt="bride"/> */}
                                             <div className="social-list">
                                                 <ul className="d-flex">
                                                     <li><Link to='/'><span className="fa fa-facebook"></span></Link></li>
@@ -135,22 +135,22 @@ const People = (props) => {
                                             </div>
                                         </div>
                                         <div className="groomsmen-bridesmaid-content">
-                                        <h4>Chris</h4>
+                                            <h4>Chris</h4>
                                             <span>Groomsmen</span>
                                         </div>
                                     </div>
                                 </div>
-                             
-                             
-                            
-                                
+
+
+
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
     )
 }
 

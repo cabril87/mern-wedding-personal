@@ -12,7 +12,7 @@ const Couple = (props) => {
                         <div className="row">
                             <div className="col-lg-6 col-md-6 col-sm-12 couple-single">
                                 <div className="couple-wrap couple-wrap-2">
-                                    <div className="couple-img">
+                                    <div className="couple-img cimg1">
                                         <img src={props.coupleimg1} alt="thumb"/>
                                     </div>
                                     <div className="couple-text">
@@ -25,7 +25,7 @@ const Couple = (props) => {
                             </div>
                             <div className="col-lg-6 col-md-6 col-sm-12 couple-single">
                                 <div className="couple-wrap couple-wrap-3">
-                                    <div className="couple-img couple-img-2">
+                                    <div className="couple-img couple-img-2 cimg2">
                                         <img src={props.coupleimg2} alt="thumb"/>
                                     </div>
                                     <div className="couple-text">

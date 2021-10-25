@@ -45,7 +45,7 @@ class Gift extends Component {
           ]
       };
       return (
-          <div className="gift-area">
+          <div id="gift" className="gift-area">
               <div className="container">
                   <div className="row">
                       <div className="col-lg-12">
