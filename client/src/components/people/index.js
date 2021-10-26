@@ -35,7 +35,8 @@ const People = (props) => {
                                             </div>
                                         </div>
                                         <div className="groomsmen-bridesmaid-content">
-
+                                            <h4>Ashton</h4>
+                                            <span>Bridesmaid</span>
                                         </div>
                                     </div>
                                 </div>
@@ -95,8 +96,8 @@ const People = (props) => {
                                             </div>
                                         </div>
                                         <div className="groomsmen-bridesmaid-content">
-                                            <h4>Alec</h4>
-                                            <span>Best Man</span>
+                                            <h4>Sal</h4>
+                                            <span>Groomsmen</span>
                                         </div>
                                     </div>
                                 </div>
@@ -115,8 +116,9 @@ const People = (props) => {
                                             </div>
                                         </div>
                                         <div className="groomsmen-bridesmaid-content">
-                                            <h4>Sal</h4>
-                                            <span>Groomsmen</span>
+
+                                            <h4>Alec</h4>
+                                            <span>Best Man</span>
                                         </div>
                                     </div>
                                 </div>

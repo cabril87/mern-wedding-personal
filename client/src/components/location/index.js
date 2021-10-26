@@ -42,10 +42,11 @@ const Location = (props) => {
                                                     <p>This is where we will put details about the wedding ceremony. </p>
                                                     <Button className="btn" onClick={toggle}>Location</Button>
                                                     <Modal isOpen={modal} toggle={toggle} className={className}>
-                                                        <ModalHeader toggle={toggle}>Location</ModalHeader>
+                                                        <ModalHeader toggle={toggle} >Location</ModalHeader>
                                                         <ModalBody>
                                                             <div className="location-map">
-                                                                <iframe src="https://www.google.com/maps/dir/35.5207778,-78.7701452/Melrose+Knitting+Mill,+309+N+Dawson+St,+Raleigh,+NC+27603/@35.6525835,-78.8600836,11z/data=!3m1!4b1!4m16!1m6!3m5!1s0x89ac5f68c4d0067b:0xe46061e7b7a5b643!2sMelrose+Knitting+Mill!8m2!3d35.7845564!4d-78.6434515!4m8!1m1!4e1!1m5!1m1!1s0x89ac5f68c4d0067b:0xe46061e7b7a5b643!2m2!1d-78.6434515!2d35.7845564" />
+                                                            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.6261419428424!2d-78.64573188431348!3d35.784558880170415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac5f68c4d0067b%3A0xe46061e7b7a5b643!2sMelrose%20Knitting%20Mill!5e0!3m2!1sen!2sus!4v1628533931591!5m2!1sen!2sus"></iframe>
+                                                                
                                                             </div>
                                                         </ModalBody>
                                                     </Modal>
@@ -66,7 +67,7 @@ const Location = (props) => {
                                                         <ModalHeader toggle={toggle}>Location</ModalHeader>
                                                         <ModalBody>
                                                             <div className="location-map">
-                                                                <iframe src="https://www.google.com/maps/dir/35.5207778,-78.7701452/Melrose+Knitting+Mill,+309+N+Dawson+St,+Raleigh,+NC+27603/@35.6525835,-78.8600836,11z/data=!3m1!4b1!4m16!1m6!3m5!1s0x89ac5f68c4d0067b:0xe46061e7b7a5b643!2sMelrose+Knitting+Mill!8m2!3d35.7845564!4d-78.6434515!4m8!1m1!4e1!1m5!1m1!1s0x89ac5f68c4d0067b:0xe46061e7b7a5b643!2m2!1d-78.6434515!2d35.7845564" />
+                                                            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.6261419428424!2d-78.64573188431348!3d35.784558880170415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac5f68c4d0067b%3A0xe46061e7b7a5b643!2sMelrose%20Knitting%20Mill!5e0!3m2!1sen!2sus!4v1628533931591!5m2!1sen!2sus"></iframe>
                                                             </div>
                                                         </ModalBody>
                                                     </Modal>
@@ -97,7 +98,7 @@ const Location = (props) => {
                                                         <ModalHeader toggle={toggle}>Location</ModalHeader>
                                                         <ModalBody>
                                                             <div className="location-map">
-                                                                <iframe src="https://www.google.com/maps/dir/35.5207778,-78.7701452/Melrose+Knitting+Mill,+309+N+Dawson+St,+Raleigh,+NC+27603/@35.6525835,-78.8600836,11z/data=!3m1!4b1!4m16!1m6!3m5!1s0x89ac5f68c4d0067b:0xe46061e7b7a5b643!2sMelrose+Knitting+Mill!8m2!3d35.7845564!4d-78.6434515!4m8!1m1!4e1!1m5!1m1!1s0x89ac5f68c4d0067b:0xe46061e7b7a5b643!2m2!1d-78.6434515!2d35.7845564" />
+                                                            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.6261419428424!2d-78.64573188431348!3d35.784558880170415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac5f68c4d0067b%3A0xe46061e7b7a5b643!2sMelrose%20Knitting%20Mill!5e0!3m2!1sen!2sus!4v1628533931591!5m2!1sen!2sus"></iframe>
                                                             </div>
                                                         </ModalBody>
                                                     </Modal>

@@ -8,21 +8,47 @@
   .gta-area .heading h4 {
       font-size: 30px;
       margin-bottom: 15px;
-      color: #151515;
+      color: #ffffff;
       font-weight: 600;
       text-align: center;
   }
+  .gta-content{
+    display: flex;
+    /* flex-direction: row; */
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+
+    
+  }
+  
+  .gta-split img{
+    width: 150px;
+   
+  }
   .gta-content p {
+    width: 100%;
       font-size: 15px;
       font-weight: 400;
       color: #909090;
       text-align: center;
       margin-bottom: 30px;
   }
+  .gta-img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
   .gta-img img{
+    
     width:100%;
+    /* border-radius: 50%; */
+    margin: 40px;
+    border: 10px solid white;
   }
 
   .gta-area{
+    width: 100%;
       background: #161616;
   }
